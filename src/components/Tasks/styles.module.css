@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.counterTasksAera {
+    width: 46rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.counterTasksAera p {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 700
+}
+
+.counterTasksAera p span {
+    background: var(--gray-400);
+    padding: 3px 9px;
+    border-radius: 999px;
+    color: var(--gray-200)
+}
+
+.counterTasksAera :nth-child(2) {
+    color: var(--purple);
+} 
+
+.list {
+    width: 46rem;
+    margin-top: 1.5rem;
+}
+
+.AreaTasksNotFound {
+    width: 46rem;
+    height: 15.25rem;
+    border-top: 1px solid var(--gray-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Areaanimation {
+    text-align: center;
+}
+.AreaTasksNotFound div {
+    font-weight: 400;
+    color: var(--gray-300);
+}
+
+.AreaTasksNotFound div p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-300);
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .counterTasksAera {
+        width: 100vw;
+        padding: 0 1rem;
+    }
+
+    .AreaTasksNotFound {
+        max-width: 100vw;
+    }
+
+    .list {
+        max-width: 100vw;
+        padding: 0 1rem;
+    }
+}

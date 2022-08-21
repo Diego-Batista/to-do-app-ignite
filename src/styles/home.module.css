@@ -1,0 +1,71 @@
+.containerCompleteTasks {
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.completeTasks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+}
+
+header button {
+    border: none;
+    background: transparent;
+    color: var(--purple);
+}
+
+.areaTextModal {
+    width: 46rem;
+    height: 26rem;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #000
+}
+
+.areaTextModal strong {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--purple);
+    margin: 2rem 0 1rem 0;
+}
+
+.areaTextModal img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.areaTextModal span {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--purple);
+}
+
+@media (max-width: 768px) {
+    .areaTextModal {
+        margin: 0 1rem
+    }
+
+    .areaTextModal span {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
